@@ -1,7 +1,11 @@
-
+/* Блок Header*/
 header {
-	background-color: #00C3CA;
+	background-color: #41586E;
 	height: 50px;
+}
+body {
+	color: #ffffff;
+	background-color: #022944; 
 }
 .navbar-brand {
     float: left;
@@ -14,6 +18,14 @@ header {
 a {
     color: #ffffff;
     text-decoration: none;
+}
+a:hover {
+	color: #022944;
+}
+/* Блок добавления таблицы */
+.table-header {
+	background-color: #41586E;
+
 }
 .task-viewer {
 	clear: both;
@@ -28,17 +40,13 @@ a {
 	justify-content: center;
 }
 .task-button-add button {
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-bottom:  30px;
 }
-.task-name {
-
+td {
+	background-color: #637c93; 
 }
 table {
 	width: 100%;
-}
-table th {
-	border: 1px solid black;
 }
 table .table-number {
 	width: 15%;
@@ -64,10 +72,28 @@ table .table-text {
 .table-buttons button {
 	margin: 5px;
 }
+/* Блок прогресса */
 .task-progress {
 	clear: both;
 	padding-top: 50px;
 }
 .progress-check {
 	margin-top: 23px;
+}
+.table-progress {
+	height: 63px;
+	vertical-align: top;
+}
+.progress-bar {
+	background-color: #fc6b5b; 
+}
+/* кнопки */
+.btn-primary {
+    background-color: #fc6b5b;
+    border-color: #fc6b5b;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: #f74f40;
+    border-color: #f74f40;
+    outline: none;
 }

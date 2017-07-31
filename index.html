@@ -14,29 +14,39 @@
   
   <body>
     <main>
+      <!-- Блок Header -->
       <header>
         <div class="logo">
           <a href="index.html" class="navbar-brand">TaskChecker <i class="logo fa fa-thumb-tack" aria-hidden="true"></i></a>
         </div>
         
       </header>
+      <!-- Блок добавления таблицы вид mobile -->
       <section class="task-viewer">
-
-          <div class="task-button-add col-xs-3">
+          <div class="task-button-add col-xs-12 visible-xs">
             <div class="task-manager">
               <p>Task Manager</p>
             </div>
             <div class="button-add">
-              <button id="add-task" class="btn btn-primary" type="submit" onclick="Test()">+</button>
-              <button id="delete-task" class="btn btn-primary" type="submit">-</button>
+              <button id="add-task-mobile" class="btn btn-primary btn-block" type="submit" onclick="addNewTask()">Add</button>
             </div>
           </div>
-          <div class="task-name col-xs-9">
-            <table id="task-table">
+          <!-- Блок добавления таблицы вид desktop -->
+          <div class="task-button-add col-sm-3 hidden-xs">
+            <div class="task-manager">
+              <p>Task Manager</p>
+            </div>
+            <div class="button-add">
+              <button id="add-task-desktop" class="btn btn-primary" type="submit" onclick="addNewTask()">Add</button>
+            </div>
+          </div>
+          <!-- Блок таблицы вид mobile -->
+          <div class="task-name col-xs-12 visible-xs">
+            <table id="task-table-mobile">
               <tr>
-                <th class="table-number"> № </th>
-                <th class="table-name">Task name</th>
-                <th class="table-buttons">Do it?!</th>
+                <th class="table-number table-header"> № </th>
+                <th class="table-name table-header">Task name</th>
+                <th class="table-buttons table-header">Do it?!</th>
                </tr>
               <tr>
                 <td class="table-text">1</td>
@@ -48,39 +58,39 @@
               </tr>
             </table>
           </div>
-      </section>
-      <section class="task-progress hidden-xs">
-        <div class="task-name col-xs-4 col-md-6">
-            <table class="task-table" border="1">
+          <!-- Блок таблицы вид desktop -->
+          <div class="task-name col-sm-9 hidden-xs">
+            <table id="task-table-desktop">
               <tr>
-                <th class="table-number"> № </th>
-                <th class="table-name">Task name</th>
-               </tr>
+                <th class="table-number table-header"> № </th>
+                <th class="table-name table-header">Task name</th>
+                <th class="table-buttons table-header">Do it?!</th>
+              </tr>
               <tr>
                 <td class="table-text">1</td>
                 <td class="table-text">Name</td>
+                <td class="table-buttons">
+                  <button class="btn btn-primary" type="submit">yes</button>
+                  <button class="btn btn-primary" type="submit">no</button>
+                </td>
               </tr>
             </table>
-          </div>
-          <div class="progress-check col-md-6">
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> 
-                 45 %
-              </div>
-            </div>
           </div>
       </section>
-      <section class="task-progress visible-xs">
+      <!-- Блок прогресса вид mobile -->
+      <!-- Блок таблицы 2 вид mobile -->
+      <section id="progress-bar-mobile" class="task-progress visible-xs">
         <div class="task-name col-xs-2">
-            <table id="task-table" border="1">
+            <table id="task-table-progress-mobile">
               <tr>
-                <th class="table-number"> № </th>
+                <th class="table-number table-header"> № </th>
                </tr>
               <tr>
-                <td class="table-text">1</td>
+                <td class="table-text table-progress">1</td>
               </tr>
             </table>
           </div>
+          <!-- Прогресс бар вид mobile -->
           <div class="progress-check col-xs-10">
             <div class="progress">
               <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> 
@@ -89,8 +99,31 @@
             </div>
           </div>
       </section>
+      <!-- Блок прогресса вид desktop -->
+      <!-- Блок таблицы 2 вид desktop -->
+      <section id="progress-bar-desktop" class="task-progress hidden-xs">
+        <div class="task-name col-sm-6">
+            <table id="task-table-progress-desktop">
+              <tr>
+                <th class="table-number table-header"> № </th>
+                <th class="table-name table-header">Task name</th>
+               </tr>
+              <tr>
+                <td class="table-text table-progress">1</td>
+                <td class="table-text table-progress">Name</td>
+              </tr>
+            </table>
+          </div>
+          <!-- Прогресс бар вид desktop -->
+          <div class="progress-check col-sm-6">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> 
+                 45 %
+              </div>
+            </div>
+          </div>
+      </section>
     </main>
-  
     <script type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/scripts.js"></script>
