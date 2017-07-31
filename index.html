@@ -21,6 +21,12 @@
         </div>
         
       </header>
+      <!-- Блок аннотации  -->
+      <section class="annotation">
+        <figure class="banner">
+          <img src="img/banner.jpg" width="100%" alt="banner">
+        </figure>
+      </section>
       <!-- Блок добавления таблицы вид mobile -->
       <section class="task-viewer">
           <div class="task-button-add col-xs-12 visible-xs">
@@ -28,7 +34,7 @@
               <p>Task Manager</p>
             </div>
             <div class="button-add">
-              <button id="add-task-mobile" class="btn btn-primary btn-block" type="submit" onclick="addNewTask()">Add</button>
+              <button id="add-task-mobile" class="btn btn-add" type="submit" onclick="addNewTask()">Add new task</button>
             </div>
           </div>
           <!-- Блок добавления таблицы вид desktop -->
@@ -37,61 +43,46 @@
               <p>Task Manager</p>
             </div>
             <div class="button-add">
-              <button id="add-task-desktop" class="btn btn-primary" type="submit" onclick="addNewTask()">Add</button>
+              <button id="add-task-desktop" class="btn-circle" type="submit" onclick="addNewTask()"><i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i></button>
             </div>
           </div>
           <!-- Блок таблицы вид mobile -->
           <div class="task-name col-xs-12 visible-xs">
-            <table id="task-table-mobile">
-              <tr>
+            <table id="task-table-mobile" class="tbl-first-mobile">
+              <div>
                 <th class="table-number table-header"> № </th>
                 <th class="table-name table-header">Task name</th>
                 <th class="table-buttons table-header">Do it?!</th>
-               </tr>
+               </div>
               <tr>
-                <td class="table-text">1</td>
-                <td class="table-text">Name</td>
+                <td class="table-text"></td>
+                <td class="table-text" contenteditable="true">Name</td>
                 <td class="table-buttons">
-                  <button class="btn btn-primary" type="submit">yes</button>
-                  <button class="btn btn-primary" type="submit">no</button>
+                  <button class="btn-circle" type="submit"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></button>
+                  <button class="btn-circle" type="submit"><i class="fa fa-times-circle fa-3x" aria-hidden="true"></i></button>
                 </td>
               </tr>
             </table>
           </div>
           <!-- Блок таблицы вид desktop -->
-          <div class="task-name col-sm-9 hidden-xs">
-            <table id="task-table-desktop">
-              <tr>
-                <th class="table-number table-header"> № </th>
-                <th class="table-name table-header">Task name</th>
-                <th class="table-buttons table-header">Do it?!</th>
-              </tr>
-              <tr>
-                <td class="table-text">1</td>
-                <td class="table-text">Name</td>
-                <td class="table-buttons">
-                  <button class="btn btn-primary" type="submit">yes</button>
-                  <button class="btn btn-primary" type="submit">no</button>
-                </td>
-              </tr>
-            </table>
-          </div>
+          
       </section>
       <!-- Блок прогресса вид mobile -->
       <!-- Блок таблицы 2 вид mobile -->
       <section id="progress-bar-mobile" class="task-progress visible-xs">
         <div class="task-name col-xs-2">
-            <table id="task-table-progress-mobile">
-              <tr>
+            <table id="task-table-progress-mobile" class="tbl-second-mobile">
+              <div>
                 <th class="table-number table-header"> № </th>
-               </tr>
+               </div>
               <tr>
-                <td class="table-text table-progress">1</td>
+                <td class="table-text table-progress"></td>
               </tr>
             </table>
           </div>
           <!-- Прогресс бар вид mobile -->
           <div class="progress-check col-xs-10">
+            <div class="stub"></div>
             <div class="progress">
               <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> 
                  45 %
@@ -103,19 +94,25 @@
       <!-- Блок таблицы 2 вид desktop -->
       <section id="progress-bar-desktop" class="task-progress hidden-xs">
         <div class="task-name col-sm-6">
-            <table id="task-table-progress-desktop">
-              <tr>
+            <table id="task-table-progress-desktop" class="tbl-second-desktop">
+              <div>
                 <th class="table-number table-header"> № </th>
                 <th class="table-name table-header">Task name</th>
-               </tr>
+                <th class="table-buttons table-header">Do it?!</th>
+               </div>
               <tr>
-                <td class="table-text table-progress">1</td>
-                <td class="table-text table-progress">Name</td>
+                <td class="table-text table-progress"></td>
+                <td class="table-text table-progress" contenteditable="true">Name</td>
+                <td class="table-buttons">
+                  <button class="btn-circle btn-yes" type="submit"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></button>
+                  <button class="btn-circle btn-no" type="submit"><i class="fa fa-times-circle fa-3x" aria-hidden="true"></i></button>
+                </td>
               </tr>
             </table>
           </div>
           <!-- Прогресс бар вид desktop -->
           <div class="progress-check col-sm-6">
+            <div class="stub"></div>
             <div class="progress">
               <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> 
                  45 %
@@ -124,7 +121,7 @@
           </div>
       </section>
     </main>
-    <script type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script>
+    <script src='http://code.jquery.com/jquery-3.2.1.js'></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/scripts.js"></script>
   </body>
