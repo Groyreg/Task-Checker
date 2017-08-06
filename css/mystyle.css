@@ -85,7 +85,11 @@ table .table-text {
 	padding-top: 50px;
 }
 .progress-check {
-	margin-top: 23px;
+	margin-top: 20px;
+}
+.progress {
+	margin-top: 20px;
+	margin-bottom: 43px; 
 }
 .table-progress {
 	height: 63px;

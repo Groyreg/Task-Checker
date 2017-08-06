@@ -126,7 +126,7 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary.disabled,
 .btn-primary[disabled],
-fieldset[disabled] .btn-primary,
+fieldset[disabled] btn-primary,
 .btn-primary.disabled:hover,
 .btn-primary[disabled]:hover,
 fieldset[disabled] .btn-primary:hover,

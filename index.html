@@ -58,18 +58,32 @@
                 <td class="table-text"></td>
                 <td class="table-text" contenteditable="true">Name</td>
                 <td class="table-buttons">
-                  <button class="btn-circle" type="submit"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></button>
-                  <button class="btn-circle" type="submit"><i class="fa fa-times-circle fa-3x" aria-hidden="true"></i></button>
+                  <button class="btn-circle btn-yes btn-y-m" type="submit"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></button>
+                  <button class="btn-circle btn-no btn-n-m" type="submit"><i class="fa fa-times-circle fa-3x" aria-hidden="true"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-text"></td>
+                <td class="table-text" contenteditable="true">Name</td>
+                <td class="table-buttons">
+                  <button class="btn-circle btn-yes btn-y-m" type="submit"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></button>
+                  <button class="btn-circle btn-no btn-n-m" type="submit"><i class="fa fa-times-circle fa-3x" aria-hidden="true"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-text"></td>
+                <td class="table-text" contenteditable="true">Name</td>
+                <td class="table-buttons">
+                  <button class="btn-circle btn-yes btn-y-m" type="submit"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></button>
+                  <button class="btn-circle btn-no btn-n-m" type="submit"><i class="fa fa-times-circle fa-3x" aria-hidden="true"></i></button>
                 </td>
               </tr>
             </table>
-          </div>
-          <!-- Блок таблицы вид desktop -->
-          
+          </div>  
       </section>
       <!-- Блок прогресса вид mobile -->
       <!-- Блок таблицы 2 вид mobile -->
-      <section id="progress-bar-mobile" class="task-progress visible-xs">
+      <section class="task-progress visible-xs">
         <div class="task-name col-xs-2">
             <table id="task-table-progress-mobile" class="tbl-second-mobile">
               <div>
@@ -78,13 +92,28 @@
               <tr>
                 <td class="table-text table-progress"></td>
               </tr>
+              <tr>
+                <td class="table-text table-progress"></td>
+              </tr>
+              <tr>
+                <td class="table-text table-progress"></td>
+              </tr>
             </table>
           </div>
           <!-- Прогресс бар вид mobile -->
-          <div class="progress-check col-xs-10">
-            <div class="stub"></div>
+          <div id="progress-bar-mobile" class="progress-check col-xs-10">
+           <div class="progress">
+              <div class="progress-bar progress-bar-striped active pgb-m" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> 
+                 45 %
+              </div>
+            </div>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> 
+              <div class="progress-bar progress-bar-striped active pgb-m" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> 
+                 45 %
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped active pgb-m" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> 
                  45 %
               </div>
             </div>
@@ -92,7 +121,7 @@
       </section>
       <!-- Блок прогресса вид desktop -->
       <!-- Блок таблицы 2 вид desktop -->
-      <section id="progress-bar-desktop" class="task-progress hidden-xs">
+      <section class="task-progress hidden-xs">
         <div class="task-name col-sm-6">
             <table id="task-table-progress-desktop" class="tbl-second-desktop">
               <div>
@@ -108,11 +137,36 @@
                   <button class="btn-circle btn-no" type="submit"><i class="fa fa-times-circle fa-3x" aria-hidden="true"></i></button>
                 </td>
               </tr>
+               <tr>
+                <td class="table-text table-progress"></td>
+                <td class="table-text table-progress" contenteditable="true">Name</td>
+                <td class="table-buttons">
+                  <button class="btn-circle btn-yes" type="submit"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></button>
+                  <button class="btn-circle btn-no" type="submit"><i class="fa fa-times-circle fa-3x" aria-hidden="true"></i></button>
+                </td>
+              </tr>
+               <tr>
+                <td class="table-text table-progress"></td>
+                <td class="table-text table-progress" contenteditable="true">Name</td>
+                <td class="table-buttons">
+                  <button class="btn-circle btn-yes" type="submit"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></button>
+                  <button class="btn-circle btn-no" type="submit"><i class="fa fa-times-circle fa-3x" aria-hidden="true"></i></button>
+                </td>
+              </tr>
             </table>
           </div>
           <!-- Прогресс бар вид desktop -->
-          <div class="progress-check col-sm-6">
-            <div class="stub"></div>
+          <div id="progress-bar-desktop" class="progress-check col-sm-6">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> 
+                 45 %
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> 
+                 45 %
+              </div>
+            </div>
             <div class="progress">
               <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> 
                  45 %
