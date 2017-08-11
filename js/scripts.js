@@ -42,6 +42,8 @@ $('.tbl-second-desktop tbody tr').each(function(l) {
   });
 
 
+
+
 function addNewTask() {
   
 // Добавление новых строк таблиц для mobile и desktop
@@ -74,9 +76,6 @@ function addNewTask() {
       var number2Des = l++;
   $(this).find('td:first').text(number2Des);
   });
-
-  console.log(allButtonYesMobile);
-  console.log(allProgressBarsMobile);
 }
  
 // Вызов функций по нажатию на заданные кнопки

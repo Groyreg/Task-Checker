@@ -24,59 +24,82 @@ a {
 a:hover {
 	color: #022944;
 }
-/* Блок добавления таблицы */
-.table-header {
-	background-color: #41586E;
 
+/* Блок выставления привычек и организации списка (левая часть экрана) */
+.habbit {
+	margin: 0;
 }
-.task-name {
-	padding: 0;
+.habbit-adder {
+	background-color: #637c93;
+	border: none;
+	height: 30px;
+	width: 100%;
+	outline: none;
+	border-radius: 4px;
 }
-.task-viewer {
-	clear: both;
-	margin-top: 50px;
-}
-.task-manager {
-	font-size: 18px;
-	text-align: center;
-}
-.button-add {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-.task-button-add button {
-	margin-bottom:  30px;
-}
-td {
-	background-color: #637c93; 
-}
-table {
+::-webkit-input-placeholder {color:#ffffff; padding-left: 10px;}
+::-moz-placeholder          {color:#ffffff; padding-left: 10px;}
+:-moz-placeholder           {color:#ffffff; padding-left: 10px;}
+:-ms-input-placeholder      {color:#ffffff; padding-left: 10px;}
+
+.habbit-view{
+	margin: 0;
+	margin-top: 30px;
 	width: 100%;
 }
-table .table-number {
-	width: 10%;
+.habbit-tbl {
+	width: 100%;
+	height: 30px;
+	background-color: #41586E;
+	border-radius: 4px;
+}
+.habbit-tbl table {
+	width: 100%;
+	height: 30px;
+	vertical-align: middle;
+}
+th.tbl-header-name, th.tbl-header-btn {
 	text-align: center;
+} 
+ol{
+counter-reset: myCounter;
+}
+li{
+list-style: none;
+}
+li:before {
+counter-increment: myCounter;
+content:counter(myCounter);
+color: white;
+background: #2980B9;
+display: inline-block;
+text-align: center;
+margin: 5px 10px;
+margin-left: -40px;
+line-height: 40px;
+width: 40px;
+height: 40px;
+border-radius: 10px;
+}
+.habbit-tbl-btn {
+	height: 50px;
+	float: right;
+	text-align: center;
+}
 
-}
-table .table-name {
-	width: 60%;
-	text-align: center;
-}
-table .table-buttons {
-	width: 30%;
-	text-align: center;
-}
-table .table-text {
-	text-align: center;
-}
-.task-do-it {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
 
 /* Блок прогресса */
+.habbit-progress{
+	margin-top: 116px;
+	width: 100%;
+	height: 30px;
+	background-color: #41586E;
+	border-radius: 4px;
+	text-align: center;
+}
+.habbit-progress h4{
+	padding-top: 5px;
+}
 .stub {
 	height: 18px;
 }
@@ -85,11 +108,15 @@ table .table-text {
 	padding-top: 50px;
 }
 .progress-check {
-	margin-top: 20px;
+	margin-top: 9px;
 }
-.progress {
-	margin-top: 20px;
-	margin-bottom: 43px; 
+.wrapper {
+	height: 50px;
+}
+.wrapper-mob {
+	margin-top: -35px;
+	margin-left: 15px;
+
 }
 .table-progress {
 	height: 63px;
@@ -105,7 +132,7 @@ table .table-text {
 	color: #fc6b5b;
 	border: 0;
 	padding: 0;
-	margin: 3px;
+	margin: 2px;
 	outline: none;
 }
 .btn-circle:hover, .btn-circle:active, .btn-circle:focus {

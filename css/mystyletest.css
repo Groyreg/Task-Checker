@@ -1,0 +1,59 @@
+.habbit {
+	margin: 0;
+}
+.habbit-adder {
+	background-color: #637c93;
+	border: none;
+	height: 30px;
+	width: 100%;
+	outline: none;
+	border-radius: 3px;
+}
+::-webkit-input-placeholder {color:#ffffff; padding-left: 10px;}
+::-moz-placeholder          {color:#ffffff; padding-left: 10px;}
+:-moz-placeholder           {color:#ffffff; padding-left: 10px;}
+:-ms-input-placeholder      {color:#ffffff; padding-left: 10px;}
+
+.habbit-view{
+	margin: 0;
+	margin-top: 30px;
+	width: 100%;
+}
+.habbit-tbl {
+	width: 100%;
+	height: 30px;
+	background-color: #41586E;
+	border-radius: 3px;
+}
+.habbit-tbl table {
+	height: 30px;
+	vertical-align: middle;
+}
+th.tbl-header-name, th.tbl-header-btn {
+	text-align: center;
+} 
+ol{
+counter-reset: myCounter;
+}
+li{
+list-style: none;
+}
+li:before {
+counter-increment: myCounter;
+content:counter(myCounter);
+color: white;
+background: #2980B9;
+display: inline-block;
+text-align: center;
+margin: 5px 10px;
+margin-left: -40px;
+line-height: 40px;
+width: 40px;
+height: 40px;
+border-radius: 10px;
+}
+.habbit-tbl-btn {
+	height: 50px;
+	float: right;
+	text-align: center;
+}
