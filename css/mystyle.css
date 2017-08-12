@@ -132,7 +132,8 @@ border-radius: 10px;
 	color: #fc6b5b;
 	border: 0;
 	padding: 0;
-	margin: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
 	outline: none;
 }
 .btn-circle:hover, .btn-circle:active, .btn-circle:focus {
@@ -142,7 +143,14 @@ border-radius: 10px;
 	padding: 0;
 	outline: none;
 }
-.btn-circle-new {
+.btn-yes {
+	color: #27AE61;
+}
+.btn-yes:hover, .btn-yes:active, .btn-yes:focus {
+	color: #4ACB0F;
+}
+
+/*.btn-circle-new {
 	background-color: inherit;
 	color: #fc6b5b;
 	border: 0;
@@ -157,19 +165,14 @@ border-radius: 10px;
 	padding: 0;
 	margin: 5px;
 	outline: none;
-}
-.btn-yes {
-	color: #27AE61;
-}
-.btn-yes:hover, .btn-yes:active, .btn-yes:focus {
-	color: #4ACB0F;
-}
-.btn-yes-new {
+}*/
+
+/*.btn-yes-new {
 	color: #27AE61;
 }
 .btn-yes-new:hover, .btn-yes-new:active, .btn-yes-new:focus {
 	color: #4ACB0F;
-}
+}*/
 .btn-add {
 	display: block;
 	width: 100%;
