@@ -82,6 +82,8 @@ height: 40px;
 border-radius: 10px;
 }
 .habbit-tbl-btn {
+	padding-left: 0px;
+	padding-right: 0px; 
 	height: 50px;
 	float: right;
 	text-align: center;
@@ -100,9 +102,6 @@ border-radius: 10px;
 .habbit-progress h4{
 	padding-top: 5px;
 }
-.stub {
-	height: 18px;
-}
 .task-progress {
 	clear: both;
 	padding-top: 50px;
@@ -116,17 +115,12 @@ border-radius: 10px;
 .wrapper-mob {
 	margin-top: -35px;
 	margin-left: 15px;
-
-}
-.table-progress {
-	height: 63px;
-	vertical-align: middle;
 }
 .progress-bar {
 	background-color: #fc6b5b; 
 }
-/* кнопки */
 
+/* кнопки */
 .btn-circle {
 	background-color: inherit;
 	color: #fc6b5b;
@@ -136,7 +130,7 @@ border-radius: 10px;
 	margin-right: 5px;
 	outline: none;
 }
-.btn-circle:hover, .btn-circle:active, .btn-circle:focus {
+.btn-circle:hover {
 	background-color: inherit;
 	color: #f74f40;
 	border: 0;
@@ -146,64 +140,7 @@ border-radius: 10px;
 .btn-yes {
 	color: #27AE61;
 }
-.btn-yes:hover, .btn-yes:active, .btn-yes:focus {
+.btn-yes:hover {
 	color: #4ACB0F;
 }
 
-/*.btn-circle-new {
-	background-color: inherit;
-	color: #fc6b5b;
-	border: 0;
-	padding: 0;
-	margin: 5px;
-	outline: none;
-}
-.btn-circle-new:hover, .btn-circle-new:active, .btn-circle-new:focus {
-	background-color: inherit;
-	color: #f74f40;
-	border: 0;
-	padding: 0;
-	margin: 5px;
-	outline: none;
-}*/
-
-/*.btn-yes-new {
-	color: #27AE61;
-}
-.btn-yes-new:hover, .btn-yes-new:active, .btn-yes-new:focus {
-	color: #4ACB0F;
-}*/
-.btn-add {
-	display: block;
-	width: 100%;
-	margin-bottom: 0;
-	font-weight: normal;
-	text-align: center;
-	vertical-align: middle;
-	touch-action: manipulation;
-	cursor: pointer;
-	background-image: none;
-	border: 1px solid transparent;
-	white-space: nowrap;
-	padding: 6px 12px;
-	font-size: 14px;
-	line-height: 1.42857143;
-	border-radius: 4px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	background-color: #fc6b5b;
-	border-color: #fc6b5b;
-	outline: none;
-	font-size: 16px;
-	font-weight: 900;
-}
-.btn-add:hover, .btn-add:active, .btn-add:focus {
-	background-color: #f74f40;
-	border-color: #f74f40;
-	color: #ffffff;
-	outline: none;
-	font-size: 16px;
-	font-weight: 900;
-	outline: none;
